@@ -1,0 +1,154 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/game_won"
+    android:orientation="vertical"
+    tools:context="com.barrelracing.GameWonPage"
+    tools:ignore="MergeRootFrame" >
+
+    <TableRow
+        android:id="@+id/tableRowDummy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="180dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRowTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/textViewTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRowMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="20dp" >
+
+        <TextView
+            android:id="@+id/textViewMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRowName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/halo_dark"
+        android:gravity="center"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/textViewName"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@color/halo_dark"
+            android:gravity="center"
+            android:text="@string/name"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textStyle="italic|bold" />
+
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/halo_dark"
+            android:ems="10"
+            android:inputType="text"
+            android:textColor="@color/white"
+            android:textStyle="italic" >
+        </EditText>
+    </TableRow>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+
+        <TableRow
+            android:id="@+id/tableRowButtonSave"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <Button
+                android:id="@+id/buttonSave"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/green_round_button"
+                android:drawableLeft="@drawable/save"
+                android:drawablePadding="2dp"
+                android:paddingLeft="35dp"
+                android:paddingRight="35dp"
+                android:text="@string/save"
+                android:textStyle="italic"
+                tools:ignore="RtlHardcoded" >
+            </Button>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRowButtonBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp" >
+
+            <Button
+                android:id="@+id/buttonBack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/green_round_button"
+                android:drawableLeft="@drawable/back"
+                android:drawablePadding="2dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="50dp"
+                android:text="@string/back"
+                android:textStyle="italic"
+                tools:ignore="RtlHardcoded" >
+            </Button>
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

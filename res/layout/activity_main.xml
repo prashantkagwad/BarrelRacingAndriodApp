@@ -1,0 +1,58 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/barrel_racing_main"
+    tools:context="com.barrelracing.MainActivity"
+    tools:ignore="MergeRootFrame" >
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TableRow
+            android:id="@+id/tableRowButtonStart"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <Button
+                android:id="@+id/buttonStart"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/green_round_button"
+                android:drawableLeft="@drawable/new_game"
+                android:drawablePadding="2dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="@string/new_game"
+                android:textStyle="italic"
+                tools:ignore="RtlHardcoded" />
+            <TextView
+                android:id="@+id/textViewSeperator"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/buttonScores"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/green_round_button"
+                android:drawableLeft="@drawable/scores"
+                android:drawablePadding="2dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="@string/scores"
+                android:textStyle="italic"
+                tools:ignore="RtlHardcoded" />
+        </TableRow>
+    </TableLayout>
+
+</FrameLayout>

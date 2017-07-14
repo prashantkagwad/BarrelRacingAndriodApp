@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Barrel Racing</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_info">Information</string>
+    <string name="title_activity_racing">RacingActivity</string>
+    <string name="title_activity_score">Top 10 Scores</string>
+    <string name="title_activity_game_over">Game Over</string>
+    <string name="title_activity_game_won">Winner</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="menu_info">Info</string>
+
+    <!-- button labels start -->
+    <string name="defaults">Default</string>
+    <string name="settings">Settings</string>
+    <string name="done">Done</string>
+    <string name="start">Start</string>
+    <string name="scores">Scores</string>
+    <string name="new_game">New Game</string>
+    <string name="save">Save</string>
+    <string name="back">Back</string>
+    <!-- button labels start -->
+
+
+    <!-- text labels start -->
+    <string name="background_color">Background Color:\nSelect a background color for the game and tap on the center circle to apply</string>
+    <string name="barrel_color">Barrel Color:\nSelect a color for the barrels and tap on the center circle to apply</string>
+    <string name="barrel_size">Barrel Size:\nSelect a size for the barrel</string>
+    <string name="name">Name</string>
+    <string name="timer">Time</string>
+    <string name="timer_start">00:00:00</string>
+    <string name="countdown">0</string>
+    <string name="won_message_in">Congratulations!! You made it to the top 10 scores. Enter your name and save your score</string>
+    <string name="won_message_out">Well done! Try again to make it to the top 10 scores</string>
+    <string name="lost_message">You need to circle around each barrel to win!    Try again</string>
+    <!-- text labels end -->
+
+
+    <!-- radio options start -->
+    <string name="radio_small">Small</string>
+    <string name="radio_medium">Medium</string>
+    <string name="radio_large">Large</string>
+    <!-- radio options start -->
+
+
+    <!-- information start -->
+    <string name="info">Welcome to Barrel Racing! Barrel Racing is a game where in the rodeo (horse rider) starts out of the gate and you need to maneuver the rodeo around the three barrels back into the gate. Touching any of the barrels during the course, ends the game and will require you to start over. Hitting the fences lets you continue the game but adds 5 seconds to your time. The goal of the game is get the fastest time in getting the rodeo back to the gate without knocking any of the barrels. \n\nINTELLECTUAL PROPERTY RIGHTS AND RESERVATION OF OWNERSHIP owned by the developers listed below.\n\n\nDesigned and developed by Prashant Kagwad .\n\n\n</string>
+    <!-- information start -->
+
+</resources>

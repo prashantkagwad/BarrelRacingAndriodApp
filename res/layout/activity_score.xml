@@ -1,0 +1,68 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.barrelracing.TopScoresPage"
+    tools:ignore="MergeRootFrame,UselessParent" >
+
+    <LinearLayout
+        android:id="@+id/containerLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingTop="10dp" >
+
+        <TableLayout
+            android:id="@+id/outerTableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:scrollbars="vertical" >
+
+                <TableLayout
+                    android:id="@+id/contactList"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+                </TableLayout>
+            </ScrollView>
+        </TableLayout>
+    </LinearLayout>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/halo_dark"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <TableRow
+            android:id="@+id/tableRowButtonBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" >
+
+            <Button
+                android:id="@+id/buttonBack"
+                android:layout_width="160dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/green_round_button"
+                android:drawableLeft="@drawable/back"
+                android:drawablePadding="2dp"
+                android:paddingLeft="35dp"
+                android:paddingRight="40dp"
+                android:text="@string/back"
+                android:textStyle="italic"
+                tools:ignore="RtlHardcoded" />
+        </TableRow>
+    </TableLayout>
+
+</FrameLayout>

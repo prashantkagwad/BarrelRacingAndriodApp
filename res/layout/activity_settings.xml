@@ -1,0 +1,202 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.barrelracing.SettingsPage"
+    tools:ignore="UselessParent" >
+
+    <TableRow
+        android:id="@+id/tableRowBackgroundColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/textViewBackgroundColor"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:text="@string/background_color"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="italic|bold" />
+
+        <TextView
+            android:id="@+id/textViewBetweenSeperator1"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/buttonBackgroundColorPicker"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_round_button"
+            android:drawableLeft="@drawable/selector"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp"
+            tools:ignore="RtlHardcoded" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRowSeperator1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@+id/textViewSeperator1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRowBarrelColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@+id/textViewBarrelColor"
+            android:layout_width="210dp"
+            android:layout_height="wrap_content"
+            android:text="@string/barrel_color"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="italic|bold" />
+
+        <TextView
+            android:id="@+id/textViewBetweenSeperator2"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/buttonBarrelColorPicker"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_round_button"
+            android:drawableLeft="@drawable/selector"
+            android:paddingLeft="17dp"
+            android:paddingRight="17dp"
+            tools:ignore="RtlHardcoded" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRowSeperator2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp" >
+
+        <TextView
+            android:id="@+id/textViewSeperator3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRowBarrelSizeText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingBottom="145dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/textViewBarrelSize"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:gravity="center_vertical"
+            android:text="@string/barrel_size"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textStyle="italic|bold" />
+
+        <TextView
+            android:id="@+id/textViewBetweenSeperator3"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+
+        <RadioGroup
+            android:id="@+id/radioBarrelSize"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" >
+
+            <RadioButton
+                android:id="@+id/radioSmall"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/radio_small"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="italic" />
+
+            <RadioButton
+                android:id="@+id/radioMedium"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_medium"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="italic" />
+
+            <RadioButton
+                android:id="@+id/radioLarge"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="@string/radio_large"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textStyle="italic" />
+        </RadioGroup>
+    </TableRow>
+
+    <TableRow
+        android:id="@+id/tableRowButtonDefault"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/halo_dark"
+        android:gravity="center_horizontal"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp" >
+
+        <Button
+            android:id="@+id/buttonDefaults"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_round_button"
+            android:drawableLeft="@drawable/defaults"
+            android:drawablePadding="2dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:text="@string/defaults"
+            android:textStyle="italic"
+            tools:ignore="RtlHardcoded" />
+
+        <TextView
+            android:id="@+id/textViewSeperator4"
+            android:layout_width="20dp"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/buttonDone"
+            android:layout_width="160dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/green_round_button"
+            android:drawableLeft="@drawable/done"
+            android:drawablePadding="2dp"
+            android:paddingLeft="35dp"
+            android:paddingRight="40dp"
+            android:text="@string/done"
+            android:textStyle="italic"
+            tools:ignore="RtlHardcoded" />
+    </TableRow>
+
+</LinearLayout>
